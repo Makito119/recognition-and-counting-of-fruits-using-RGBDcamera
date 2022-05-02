@@ -42,13 +42,13 @@ binarization(const cv::Mat1b& src, cv::Mat1b& dst, int thresh)
 ## 画像
 * RGB画像
 
-![RGB画像](./RGB画像.jpg)
+![RGB画像](./readme/RGB画像.jpg)
 * 深度画像
 
-![RGB画像](./深度画像.jpg)
+![RGB画像](./readme/深度画像.jpg)
 * 物体の抽出画像
 
-![果物の抽出画像](./果物の抽出画像.jpg)
+![果物の抽出画像](./readme/果物の抽出画像.jpg)
 * 出力画像
 
-![出力画像](./出力画像.jpg)
+![出力画像](./readme/出力画像.jpg)
