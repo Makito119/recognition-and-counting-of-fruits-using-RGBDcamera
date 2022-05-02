@@ -16,9 +16,39 @@ RGB-Dカメラを用いた果物の認識・カウント
 
 **本プログラムはOpencv3の関数を一切使わず、自ら画像処理の関数を作成します。**
 
-例えば
+例えば、opencvの２値化の関数は
+```
+cv::threshold(入力画像,出力画像,閾値,最大値の値,閾値処理の種類); 
+```
 
+しかし、本プログラムは原理を深掘りして、自分で２値化関数を作成します。
+```
+binarization(const cv::Mat1b& src, cv::Mat1b& dst, int thresh)
+{
+	dst = cv::Mat1b(src.size());
+	for (int y = 0; y < src.rows; ++y) {
+		for (int x = 0; x < src.cols; ++x) {
+			if (src(y, x) < thresh) dst(y, x) = 0;
+			else dst(y, x) = 255;
+		}
+	}
+}
+```
 
+自作した関数の詳しい内容は
+[Opencv3_code](https://github.com/Makito119/Opencv3_code)
+をご覧ください
 
+## 画像
+* RGB画像
 
-![s](./出力画像.jpg)
+![RGB画像](./RGB画像.jpg)
+* 深度画像
+
+![RGB画像](./深度画像.jpg)
+* 物体の抽出画像
+
+![果物の抽出画像](./果物の抽出画像.jpg)
+* 出力画像
+
+![出力画像](./出力画像.jpg)
