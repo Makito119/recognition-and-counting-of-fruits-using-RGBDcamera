@@ -39,13 +39,5 @@ int main() {
 	//cv::imshow("kukei", peri);	
 	cv::waitKey(0);
 
-	//cv::imwrite("sa.png", ss);
-
-	//cv::imwrite("571a.png", dst1);
-	//cv::imwrite("hsvv.png", hsv);
-	//cv::imwrite("heika.png", temp3);
-	//cv::imwrite("rgb.png", rgb);
-
-	//apple5564,466 lemon3220,311banana7299,637
 	return 0;
 }
